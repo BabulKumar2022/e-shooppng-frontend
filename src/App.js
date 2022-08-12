@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import AddBook from "./components/AddBook";
 import About from "./components/About";
 import Books from "./components/Book/Books";
+import BookDetail from "./components/Book/BookDetail";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/add" element={<AddBook></AddBook>} exact></Route>
         <Route path="/books" element={<Books></Books>} exact></Route>
         <Route path="/about" element={<About></About>} exact></Route>
+        <Route path="/books/:id" element={<BookDetail></BookDetail>} exact></Route>
          
         </Routes>
       </main>

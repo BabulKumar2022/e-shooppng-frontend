@@ -17,10 +17,11 @@ const Header = () => {
           <Tabs
             sx={{ ml: "auto" }}
             textColor="inherit"
-            indicatorColor="secondary"
-            value={1}
-            onChange={(e, val) => setValue(val)}
+            indicatorColor="primary"
+            value ={0}
+            onChange={(e) => setValue(value)}
           >
+            <Tab LinkComponent={NavLink} to="/" label="Home" />
             <Tab LinkComponent={NavLink} to="/add" label="Add product" />
             <Tab LinkComponent={NavLink} to="/books" label="Books" />
             <Tab LinkComponent={NavLink} to="/about" label="About Us" />

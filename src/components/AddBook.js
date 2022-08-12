@@ -36,10 +36,7 @@ const sendRequest = async() =>{
     }).then(res => res.data);
 } 
 
-
-
-
-
+ 
 
 const handleSubmit = (e) =>{
     e.preventDefault();
